@@ -6,11 +6,11 @@
 FROM ubuntu
 MAINTAINER NeuralFoundry <neuralfoundry.com>
 
-RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sources.list
+# RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sources.list
 RUN apt-get update
 
 ## Python Family
-RUN apt-get install -qy python python-dev python-distribute python-pip ipython
+RUN apt-get install -qy python3 python3-dev python-distribute python3-pip ipython
 
 ## Selenium 
 RUN apt-get install -qy firefox xvfb 
